@@ -1,0 +1,21 @@
+.format{
+    padding-left: 47%;
+}
+.center{
+    display: flex;
+    justify-content:center;
+}
+
+.topspace{
+    padding-top: 4.5%;
+    
+}
+.alignment2{
+    float: left 100%;
+}
+
+.forcompo{
+  
+    margin-left:15%;padding:2%;
+}
+

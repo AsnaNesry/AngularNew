@@ -1,0 +1,66 @@
+<br>
+
+<head>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+</head>
+<br><br><br>
+
+
+
+<body>
+  <div class="container">
+    <h1 class="text-center" style="font-style:italic">Login to continue......</h1>
+    <!-- <button type="button" class="btn btn-primary" (click) = "show()">Login</button> -->
+     </div>
+  <!-- Creates the bootstrap modal where the image will appear -->
+  <div [style.display]="showModal ? 'block' : 'none'" class="modal" id="imagemodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header"style="background-color: rgb(95, 95, 248);">
+        <h4 class="modal-title" id="myModalLabel" style="color: whitesmoke;">Login</h4>
+      </div>
+      <div class="modal-body" style="background-color: rgb(95, 95, 248);">
+
+<!-- <div id="login-card"> -->
+
+  <h2 class="text-center" style="font-style: italic;">Welcome!!!</h2>
+  <br>
+
+  
+  <form [formGroup]="loginForm">
+    <div class="form-group">
+      <input formControlName="username" id="name" class="form-control" placeholder="Enter Username" [ngClass]="{ 'is-invalid': submitted && formControls.username.errors }">
+      <div *ngIf="submitted && formControls.username.errors" class="invalid-feedback">
+      <div *ngIf="formControls.username.errors.required" style="color: red;">Username is required</div>
+    </div>
+    </div>
+    <br>
+    <div class="form-group">
+      <input type="password" id="name" formControlName="password" class="form-control" placeholder="Enter Password" [ngClass]="{ 'is-invalid': submitted && formControls.password.errors }">
+      <div *ngIf="submitted && formControls.password.errors" class="invalid-feedback">
+        <div *ngIf="formControls.password.errors.required" style="color: red;">Password is required</div>
+      </div>
+    </div>
+    <div class="form-group" style="text-align: center;">
+    <button id="button" style="color: black; background-color: white;" (click)="login()">Submit</button>
+  </div>
+    </form>
+  <!-- </div> -->
+
+</div>
+<div class="modal-footer" style="background-color: rgb(95, 95, 248)" >
+    <button type="button" class="btn btn-dark" data-dismiss="modal" (click) = "hide()">Close</button>
+
+</div>
+</div>
+</div>
+</div>
+  
+
+</body>
+
+
+
+

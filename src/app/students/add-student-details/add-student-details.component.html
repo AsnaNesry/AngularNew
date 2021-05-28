@@ -1,0 +1,53 @@
+
+    <div class="card bg-info" style="width:500px;margin:0 auto;float:none;margin-bottom:10px">
+        <div class="card-body" align="center">
+            <h2>Add Student Details</h2>
+<table align="center">
+           
+    <tr>
+        <td>Admission Number</td>
+        <td><input type="text"  [(ngModel)]="obj_s.studentId"></td>  
+    </tr><br>
+    <tr>
+        <td>First Name</td>
+        <td><input type="text"  [(ngModel)]="obj_s.firstName"></td>  
+    </tr> <br> 
+    <tr>
+        <td>Last Name</td>
+        <td><input type="text"  [(ngModel)]="obj_s.lastName"></td>    
+    </tr><br>
+     <tr>
+        <td>Batch Id</td>
+        <td>
+           <input type="number" [(ngModel)]="obj_s.batchId">
+        </td>
+    </tr><br>
+    <tr>
+        <td>Gender</td>
+        <td>
+           <select type="text" [(ngModel)]="obj_s.gender">
+           
+               <option>F</option>
+               <option>M</option>
+           </select>
+        </td>
+    </tr> <br>
+    <tr>
+        <td>Payment Amount</td>
+        <td>
+           <input type="number" [(ngModel)]="obj_s.paymentAmount">
+        </td>
+    </tr> <br>
+     
+    <tr>
+        <td>Payment Status</td>
+        <td>
+           <input type="text" [(ngModel)]="obj_s.paymentStatus">
+        </td>
+    </tr> 
+</table>
+<br>
+<button class="btn btn-success" type="submit" (click)="SaveStudentDetails()">Save</button>
+   
+</div>
+</div>

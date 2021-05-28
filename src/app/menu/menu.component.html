@@ -1,0 +1,94 @@
+<!-- <nav class="navbar navbar-expand-sm navbar-dark bg-dark ">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#" style="color:whitesmoke">College Management</a>
+    </div>
+    <ul *ngIf="displayMenuList()==true" class="navbar-nav" style="color:whitesmoke">
+      <li><a routerLink="/Home" routerLinkActive="active" class="nav-item" style="color: cornsilk;">
+          Home</a></li>
+
+      <li><a routerLink="/About" routerLinkActive="active" class="nav-item" style="color: cornsilk;">
+          About</a></li>
+
+      <li class="nav-item dropdown" ngbDropdown>
+        <a class="nav-link dropdown-toggle" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown"
+          aria-expanded="false" style="color:cornsilk" ngbDropdownToggle>Student Administration
+          <span class="caret"></span></a>
+        <ul class="dropdown-menu" ngbDropdownMenu aria-labelledby="navbarScrollingDropdown" style="color: black;"
+          aria-expanded="false">
+          <li ngbDropdownItem>
+            <a routerLink="/ShowStudentDetails" routerLinkActive="active">Show Student Details</a>
+          </li>
+          <li ngbDropdownItem>
+            <a routerLink="/AddStudentDetails" routerLinkActive="active">Add Student Details</a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+    <ul *ngIf="displayMenuList()==true" class="nav navbar-nav navbar-right">
+
+      <li class="nav-item dropdown" ngbDropdown>
+        <a class="nav-link dropdown-toggle" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown"
+          aria-expanded="false" style="color:yellow" ngbDropdownToggle><span
+            class="glyphicon glyphicon-user"></span>{{user}}</a>
+        <ul class="dropdown-menu" ngbDropdownMenu aria-labelledby="navbarScrollingDropdown" style="color: black;"
+          aria-expanded="false">
+          <li ngbDropdownItem>
+            <a (click)="logout()" style="color:red">logout</a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+    </div>
+    </nav> -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" style="color: cornsilk;">College Management</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto" *ngIf="displayMenuList()==true">
+          <li class="nav-item active">
+            <a class="nav-link" routerLink="/Home" routerLinkActive="active" style="color: cornsilk;">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/About" routerLinkActive="active" style="color: cornsilk;">About</a>
+          </li>
+          <li class="nav-item dropdown" ngbDropdown>
+            <a class="nav-link dropdown-toggler" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false" style="color: cornsilk" ngbDropdownToggle>
+              Student Administration
+            </a>
+            <ul class="dropdown-menu" ngbDropdownMenu aria-labelledby="navbarScrollingDropdown" style="color: black;"
+            aria-expanded="false">
+            <li ngbDropdownItem>
+              <a class="dropdown-item" routerLink="/ShowStudentDetails" routerLinkActive="active">Show Student Details</a>
+              </li>
+              <li ngbDropdownItem>
+              <a class="dropdown-item" routerLink="/AddStudentDetails" routerLinkActive="active">Add Student Details</a>
+            </li>
+        </ul>
+
+          </li>
+       </ul>
+
+       <ul *ngIf="displayMenuList()==true" class="nav navbar-nav navbar-right">
+
+        <li class="nav-item dropdown" ngbDropdown>
+          <a class="nav-link dropdown-toggler" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false" style="color:yellow" ngbDropdownToggle><span
+              class="glyphicon glyphicon-user"></span>{{user}}</a>
+          <ul class="dropdown-menu" ngbDropdownMenu aria-labelledby="navbarScrollingDropdown" style="color: black;"
+            aria-expanded="false">
+            <li ngbDropdownItem>
+              <a (click)="logout()" style="color:red">logout</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+
+       
+      </div>
+      </nav>

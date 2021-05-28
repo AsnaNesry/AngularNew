@@ -1,0 +1,46 @@
+ .fixed-footer{
+    width: 100%;
+    position: fixed;        
+    background: black;
+    padding: 10px 0;
+    color: #fff;
+}
+.fixed-header{
+    top: 0;
+    width: 100%;
+    position: fixed;        
+    background: #575a56;
+    padding: 5px 0;
+    color: #fff;
+}
+.fixed-footer{
+    bottom: 0;
+}
+.container{
+    width: 80%;
+    margin: 0 auto; }
+.topspace{
+    padding-top: 4.5%;
+    
+}
+.alignment1{
+    float: right;
+}
+.alignment2{
+    float: left;
+}
+ .forcompo{
+    margin-left:1%;padding:2%;
+} 
+
+h1{
+    font-family: times, Times New Roman, times-roman, georgia, serif;
+    color: rgb(243, 235, 235);
+    margin: 0;
+    padding: 0px 0px 6px 0px;
+    font-size: 30px;
+    line-height: 15px;
+    letter-spacing: -2px;
+    font-weight: bold;
+    text-align: center;
+}

@@ -1,0 +1,51 @@
+
+
+<div class="card bg-info" style="width:500px;margin:0 auto;float:none;margin-bottom:10px">
+    <div class="card-body" align="center">
+        <h2>Edit Details</h2>
+<table align="center">
+         
+    <tr>
+        <td>Student Id</td>
+        <td><input type="number" [(ngModel)]=single_student_data.studentId ></td>  
+    </tr>
+    <tr>
+        <td>First Name</td>
+        <td><input type="text" [(ngModel)]=single_student_data.firstName ></td>  
+    </tr> 
+     
+    <tr>
+        <td>Last Name</td>
+        <td><input type="text" [(ngModel)]=single_student_data.lastName></td>    
+    </tr>
+     <tr>
+        <td>Batch Id</td>
+        <td><input type="snumber" [(ngModel)]=single_student_data.batchId></td>
+    </tr>
+    <tr>
+        <td>Gender</td>
+        <td><input type="text" [(ngModel)]=single_student_data.gender></td>
+    </tr>
+    <tr>
+        <td>Payment Amount</td>
+        <td><input type="number"  [(ngModel)]=single_student_data.paymentAmount></td>
+    </tr> 
+    <tr>
+        <td>Payment Status</td>
+        <td><input type="text" [(ngModel)]=single_student_data.paymentStatus></td>    
+        </tr>
+    
+        
+</table>
+<br>
+
+    
+    <button class="btn btn-success" type="submit" (click)="EditStudentDetails(single_student_data)" style="margin:5px">Edit</button>
+
+
+    <a routerLink="/ShowStudentDetails" routerLinkActive="active"><button class="btn btn primary" style="margin:5px">Back</button></a>
+
+   
+
+</div>
+</div>

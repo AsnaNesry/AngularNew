@@ -1,0 +1,26 @@
+<hr>
+<table border=1>
+    <tr>
+        <th>StudentId</th>
+        <th>FirstName</th>
+        <th>LastName</th>
+        <th>BatchId</th>
+        <th>Gender</th>
+        <th>Edit</th>
+        
+        
+       
+    </tr>
+    <tr *ngFor="let d of userdata">
+    <td>{{d.studentId}}</td>
+    <td>{{d.firstName}}</td>
+    <td>{{d.lastName}}</td>
+    <td>{{d.batchId}}</td>
+    <td>{{d.gender}}</td>
+    
+    <td><a [routerLink] = "['/EditStudent/', d.studentId]"><input type="button" value="Update"></a></td> 
+    
+
+    
+</tr>
+</table>

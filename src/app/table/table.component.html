@@ -1,0 +1,20 @@
+<div class="table-responsive">
+    <table class="table table-bordered table-striped table-hover table-info">
+        <thead>
+            <tr>
+                <th *ngFor="let key of ColData">{{key.header}}</th>
+                <th>Update</th>
+                <th>Remove</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let record of GridData" (click)="onRowClick(record)">
+                <td *ngFor="let key of ColData">
+                    <span>{{record[key.field]}}</span>
+                </td>
+                <td><i-bs name="pencil" (click)="onUpdate(record)" ></i-bs> </td>
+                <td><i-bs name="trash" (click)="onDelete(record);$event.stopPropagation();"></i-bs></td>
+            </tr>
+        </tbody>
+    </table>
+</div>

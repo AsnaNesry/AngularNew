@@ -1,0 +1,45 @@
+<h1 style="font-weight: bolder;font-style: italic;color:indigo;text-align: center;">Student Details</h1>
+
+<br>
+
+<div class="row">
+  <div class="col-lg-8 col-md-10 ml-auto mr-auto">
+    <div class="float-right">
+      <app-pagination [totalRecords]="collection.count" [recordsPerPage]="pageSize"
+        (onPageChange)="pageChanged($event)"></app-pagination>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="row">
+  <div class="col-md-12">
+    <app-table [GridData]="collection.data" [ColData]="colData" (onRowSelection)="rowSelection($event)" (onRowUpdate)="onClickUpdate($event)" (onRowDeletion)="deleteStudentDetails($event);"></app-table>
+  </div>
+</div>
+
+<br>
+
+<div class="row" style="margin:auto;max-width:300px">
+  Items per page:
+ <input type="text" class="form-control" placeholder="" [(ngModel)]="pageSize" /><br>
+ 
+</div><br>
+
+      
+<form class="example" action="/action_page.php" style="margin:auto;max-width:300px">
+          <ul>  
+            
+           <input type="text" class="form-control" placeholder="Search by id" [(ngModel)]="searchKey" />
+           
+            <button class="btn btn-outline-secondary" type="button"  (click)="showSearch()">
+              Search
+            </button>
+          
+          </ul>
+        </form>     
+         
+
+          
+      

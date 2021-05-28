@@ -1,0 +1,57 @@
+
+  #login-card{
+      width:350px;
+      border-radius: 30px;
+      padding: 50px;
+      margin:150px auto;
+      background-color: rgb(95, 95, 248);
+    
+  }
+
+  h2{
+      color: whitesmoke;
+      font-family: "cursive",Times, serif;
+  }
+  
+  #name{
+      border-radius:30px;
+      background-color: #ebf0fc;
+      border-color: #ebf0fc;
+      color: #9da3b0;
+  }
+  
+  #button{
+      border-radius:80px;
+      width: 50%;
+      padding-right:50px;
+      position: center;
+      margin: 50px;
+      background-color:white;
+  
+  }
+  
+  #btn{
+     position: absolute; 
+     bottom: -35px; 
+     padding: 5px;
+     margin: 0px 55px;
+     align-items: center;
+     border-radius: 5px;
+  }
+  #container{
+      margin-top:25px;
+     
+  }
+  
+  .btn-circle.btn-sm { 
+              width: 60px; 
+              height: 40px; 
+              padding: 2px 0px; 
+              border-radius: 25px; 
+              font-size: 14px; 
+              text-align: center;
+              
+              margin: 8px;
+  }
+
+  
